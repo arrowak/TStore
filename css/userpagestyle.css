@@ -1,0 +1,44 @@
+header{
+width : 800px;
+height : 250px;
+background : #DEDEDE;
+margin : 0px auto ;
+background-repeat : no-repeat;
+} 
+
+
+.slider {
+  margin: 0px auto;
+  width: 800px; /* Update to your slider width */
+  height: 250px; /* Update to your slider height */
+  position : relative;
+  overflow: hidden; 
+  z-index: 10;
+  float: right;
+  display : inline;
+}
+
+.slider li {
+  display: none;
+  position: relative; 
+}
+
+#bannerimg{
+z-index : 1000;
+ position : relative;
+ width : 250px;
+ float : left;
+ display : inline;
+}
+
+
+.container{
+width : 800px;
+background : #DEDEDE;
+}
+
+
+body{
+width : 960px;
+margin : 0px auto;
+}
