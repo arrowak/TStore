@@ -44,11 +44,14 @@
 	</script>
 </head>
 
-<header>
+<body>	
 	<div id="bannerimg">
-		<img src="../img/tbekuBanner.png"/>
+	<img src="../img/tbekuBanner.png"/>
 	</div> <!-- End div bannerimg -->
-	<ul class="slider">	
+	<br>
+	<br><br>
+	<div class="container">
+		<ul class="slider thumbnail">
 		<li>
 		<img src="../img/bootstrap-mdo-sfmoma-01.jpg" />
 		</li>
@@ -58,24 +61,8 @@
 		<li>
 		<img src="../img/bootstrap-mdo-sfmoma-03.jpg" />		
 		</li>
-		<li>
-		<img src="../img/CAM-Tshirts-02.png" />		
-		</li>
 	</ul>
-</header>
-<body>	
-	
-	<div class="container">
-	<?php 
-		include 'menubar.php';
-	?>
-		This is Container class
 	</div> <!-- End div container -->
 	
 </body>
-
-<footer>
-<hr>
-Copyright 2012
-</footer>
 </html>

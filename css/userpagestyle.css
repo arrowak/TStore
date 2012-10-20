@@ -11,34 +11,72 @@ background-repeat : no-repeat;
   margin: 0px auto;
   width: 800px; /* Update to your slider width */
   height: 250px; /* Update to your slider height */
-  position : relative;
+  position : absolute;
   overflow: hidden; 
+  top: 0px;
   z-index: 10;
-  float: right;
-  display : inline;
 }
 
 .slider li {
   display: none;
-  position: relative; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 
 #bannerimg{
 z-index : 1000;
  position : relative;
+ top: 0px;
  width : 250px;
- float : left;
- display : inline;
 }
 
 
 .container{
 width : 800px;
+height : 800px;
 background : #DEDEDE;
+margin : 0px auto ;
 }
 
-
-body{
-width : 960px;
+footer{
+width : 800px;
 margin : 0px auto;
 }
+
+
+
+/* css for menubar */
+#menuContainer{
+float : right;
+}
+
+.menuLi{
+	width:100px;
+	height:50px;
+	float:left;
+	color:#191919;
+	text-align:center;
+	overflow:hidden;
+}
+
+a{
+	
+}
+
+li p{
+	padding:0px 5px;
+	color:#FFF;
+	text-decoration:none;
+}
+	.subtext{
+		padding-top:15px;
+		color : #FFF;
+	}
+
+/*Menu Color Classes*/
+.green{background:#6AA63B url('../img/green-item-bg.jpg') top left no-repeat;}
+.yellow{background:#FBC700 url('../img/yellow-item-bg.jpg') top left no-repeat;}
+.red{background:#D52100 url('../img/red-item-bg.jpg') top left no-repeat;}
+.purple{background:#5122B4 url('../img/purple-item-bg.jpg') top left no-repeat;}
+.blue{background:#0292C0 url('../img/blue-item-bg.jpg') top left no-repeat;}
