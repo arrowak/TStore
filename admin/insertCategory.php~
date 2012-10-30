@@ -6,9 +6,9 @@
 		$mongoCollection = $mongoDatabase->Categories;
 		$category = $_POST["txtCategory"];
 		$query = array("name" => $category);
+	
 		try {
-		$mongoCollection->ensureIndex(array('name' => 1), array("unique" => true));
-	    $mongoCollection->insert($query);
+	    $mongoCollection->save($query, true);
 	    echo "Category inserted successfully";
 		}	 catch(MongoCursorException $e) {	
 	  	  echo "Can't save the same category twice!\n";

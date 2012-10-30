@@ -6,6 +6,75 @@
 	
 	<script src="../js/jquery.js"></script>
 	<script type="text/javascript">
+		$(document).ready(function(){  
+			getItems();	
+			
+			$("#home").click(function(){
+				getItems();
+			});
+			
+			$("#contactus").click(function(){
+				getContactForm();
+			});
+			
+			$("#kidswear").click(function(){
+				$.ajax({
+					type: "POST",
+					url: "kidswear.php",
+					datatype: "html",
+					success: function(data) {
+						$("#containerContent").html(data);
+					}   
+				});
+			});
+			
+			
+			
+		});
+		
+		// definition of the functions
+		
+		function contactUs(){
+			var inputname=$("#inputName").val();	
+			var inputemail=$("#inputEmail").val();	
+			var inputphone=$("#inputPhone").val();	
+			var inputmessage=$("#inputMessage").val();	
+			$.post('contactMsgSend.php', {inputname: inputname,inputemail: inputemail,inputphone: inputphone,inputmessage: inputmessage},
+				function(data){
+				$("#contactsuccessmessage").css("display","block");
+					$("#contactsuccessmessage").html(data);
+					$("#contactsuccessmessage").hide();			
+					$("#contactsuccessmessage").fadeIn(1500);				
+			});
+		}
+		
+		function getItems(){
+			$.ajax({
+  type: "POST",
+  url: "items.php",
+  datatype: "html",
+  success: function(data) {
+		$("#containerContent").html(data);
+	}   
+	});
+		}
+		
+		
+		function getContactForm(){
+			$.ajax({
+  type: "POST",
+  url: "contactUs.php",
+  datatype: "html",
+  success: function(data) {
+		$("#containerContent").empty();
+		$("#containerContent").html(data);
+	}   
+	});
+		}
+	</script>
+	
+	
+	<script type="text/javascript">
 		jQuery(function($) { 
 
   // settings
@@ -66,10 +135,16 @@
 <body>	
 	
 	<div class="container">
-	<?php 
+<div id="menuDiv">
+<?php 
 		include 'menubar.php';
 	?>
-		This is Container class
+	</div>	<!-- End div menuDiv -->
+	
+	<div id="containerContent">
+			this is container content	
+	</div>
+		
 	</div> <!-- End div container -->
 	
 </body>

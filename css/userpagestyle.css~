@@ -4,8 +4,8 @@ height : 250px;
 background : #DEDEDE;
 margin : 0px auto ;
 background-repeat : no-repeat;
-
 } 
+
 
 .slider {
   margin: 0px auto;
@@ -15,7 +15,6 @@ background-repeat : no-repeat;
   overflow: hidden; 
   top: 0px;
   z-index: 10;
-  
 }
 
 .slider li {
@@ -35,11 +34,9 @@ z-index : 1000;
 
 .container{
 width : 800px;
+height : 800px;
 background : #DEDEDE;
 margin : 0px auto ;
-padding-bottom: 50px;
--moz-border-radius:15px;
-  border-radius:15px;
 }
 
 footer{
@@ -49,85 +46,20 @@ margin : 0px auto;
 
 body{
 background-color: #EEEEEE;	
-}
+	}
 	
-#menuDiv{
+	#menuDiv{
 display: block;
-height : 60px;	
-}
+height : 60px;		
+		}
+		#containerContent{
+display: block;			
+			}
 
-
-
-#containerContent{	
-width: 800px;	
-margin-top: 90px;
-margin-left: 20px;
-}
-
-#containerContent li{
-list-style: none;	
-}
-
-#containerContent hr{
-margin-left:-20px;
-width: 800px;	
-}
-
-#containerContent .item{
-width:180px;
-padding-left: 25px;
-padding-right: 5px;
-padding-top : 20px;
-padding-bottom: 20px;
-margin-bottom:20px;
-float:left;
-text-align:center;
-background-color:#CECECE;
--moz-border-radius:15px;
-  border-radius:15px;
-}
-
-#containerContent .item:hover{
-background-color:#BEBEBE;
-}
-
-#itemsWrapper ul li img{
-margin-bottom:10px;
-}
-
-#contactLabel{
-float:left;
-height:300px;
-padding-right:10px;
-margin-top:30px;
-margin-right:20px;
-border-right:solid;
-width:280px;
-}
-
-#contactForm{
-float:left;
-margin-right:100px;
-}
-
-.form-horizontal{
-margin-left:-50px;
-}
-
-#contactsuccessmessage{
-margin-left:-20px;
-width:750px;
-}
-
-hr{
-color:#AFAFAF;
-background-color:#AFAFAF;
-height:3px;
-}
 
 /* css for menubar */
 #menuContainer{
-float: right;
+float : right;
 }
 
 .menuLi{
@@ -157,10 +89,6 @@ li p{
 		padding-top:15px;
 		color : #FFF;
 	}
-	
-#catmenulabel{
-margin-left:-15px;
-}
 
 /*Menu Color Classes*/
 .green{background:#6AA63B url('../img/green-item-bg.jpg') top left no-repeat;}
@@ -178,9 +106,6 @@ margin-left:-15px;
 #cssmenu a {text-decoration: none; font-weight: bold;}
 #cssmenu {height: 50px; background-color: rgb(35,35,35); box-shadow: 0px 2px 3px rgba(0,0,0,.4);}
 
-#categoriesItems{
-text-align: center;
-}
 
 #cssmenu > ul > li {
     float: left;
@@ -190,6 +115,7 @@ text-align: center;
 
 #cssmenu > ul > li > a {
     color: #FFF;
+    font-family: Verdana, 'Lucida Grande';
     font-size: 15px;
     line-height: 30px;
     padding: 15px 20px;

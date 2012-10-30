@@ -1,17 +1,22 @@
 <?php
 	$mongoConnection = new Mongo(); 
 
-$mongoDatabase = $mongoConnection->testCategories;
+$mongoDatabase = $mongoConnection->tbeku;
 
 $mongoCollection = $mongoDatabase->Categories;
 
 $resultSet = $mongoCollection->find();
 
-foreach ($resultSet as $result)
+// foreach ($resultSet as $result)
+// {
+	// foreach ($result['CategoryName'] as $name => $value)
+	// {
+		// echo "$name|";
+	// }
+// }
+
+foreach ($resultSet as $name)
 {
-	foreach ($result['CategoryName'] as $name => $value)
-	{
-		echo "$name|";
-	}
+	echo $name['name']."|";
 }
 ?>
