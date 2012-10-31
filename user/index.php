@@ -5,9 +5,12 @@
 	<link rel = "stylesheet" type = "text/css" href = "../css/userpagestyle.css">
 	
 	<script src="../js/jquery.js"></script>
+	<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
+
 	<script type="text/javascript">
 		$(document).ready(function(){  
 			getItems();	
+			
 			
 			$("#home").click(function(){
 				getItems();
@@ -15,6 +18,10 @@
 			
 			$("#contactus").click(function(){
 				getContactForm();
+			});
+			
+			$("ul.item").click(function(){
+				
 			});
 			
 			$("#kidswear").click(function(){
@@ -39,13 +46,31 @@
 			var inputemail=$("#inputEmail").val();	
 			var inputphone=$("#inputPhone").val();	
 			var inputmessage=$("#inputMessage").val();	
+			if(inputname == "" || inputemail == "" || inputphone == "" || inputmessage == "")
+			{
+				$("#contactsuccessmessage").css("display","block");
+					$("#contactsuccessmessage").html("Please fill all the fields.");
+					$("#contactsuccessmessage").attr('class','alert alert-error');
+					$("#contactsuccessmessage").hide();			
+					$("#contactsuccessmessage").fadeIn(1500);
+			}
+			else
+			{
+				$("#contactsuccessmessage").css("display","block");
+					$("#contactsuccessmessage").html("Sending mail. Please wait....");
+					$("#contactsuccessmessage").attr('class','alert');
+					$("#contactsuccessmessage").hide();			
+					$("#contactsuccessmessage").fadeIn(1500);		
+					
 			$.post('contactMsgSend.php', {inputname: inputname,inputemail: inputemail,inputphone: inputphone,inputmessage: inputmessage},
 				function(data){
 				$("#contactsuccessmessage").css("display","block");
 					$("#contactsuccessmessage").html(data);
+					$("#contactsuccessmessage").attr('class','alert');
 					$("#contactsuccessmessage").hide();			
 					$("#contactsuccessmessage").fadeIn(1500);				
 			});
+			}
 		}
 		
 		function getItems(){
@@ -70,6 +95,11 @@
 		$("#containerContent").html(data);
 	}   
 	});
+		}
+		
+		
+		function getAboutForm(){
+		
 		}
 	</script>
 	
@@ -111,6 +141,8 @@
 
 });
 	</script>
+	
+
 </head>
 
 <header>
@@ -119,16 +151,31 @@
 	</div> <!-- End div bannerimg -->
 	<ul class="slider">	
 		<li>
-		<img src="../img/bootstrap-mdo-sfmoma-01.jpg" />
+		<img src="../img/category-polo0.jpg" />
 		</li>
 		<li>
-		<img src="../img/bootstrap-mdo-sfmoma-02.jpg" />
+		<img src="../img/category-tshirt0.jpg" />
 		</li>
 		<li>
-		<img src="../img/bootstrap-mdo-sfmoma-03.jpg" />		
+		<img src="../img/category-wb0.jpg" />		
 		</li>
 		<li>
-		<img src="../img/CAM-Tshirts-02.png" />		
+		<img src="../img/header-irish.jpg" />		
+		</li>
+		<li>
+		<img src="../img/page-three-news_01.jpg" />		
+		</li>
+		<li>
+		<img src="../img/rBEDik_IL-gIAAAAAAHvE-9wJAUAAATlQPtgRwAAe8r005.jpg" />		
+		</li>
+		<li>
+		<img src="../img/shop2tshirt3fixed2.jpg" />		
+		</li>
+		<li>
+		<img src="../img/slide-1.jpg" />		
+		</li>
+		<li>
+		<img src="../img/tshirt-printing-page1.jpg" />		
 		</li>
 	</ul>
 </header>
@@ -142,11 +189,23 @@
 	</div>	<!-- End div menuDiv -->
 	
 	<div id="containerContent">
-			this is container content	
+			
 	</div>
 		
 	</div> <!-- End div container -->
 	
+	
+<div class="modalcontainer">
+<div class="modal-lightsout"></div>
+<div class="modal-profile">
+    
+    <a href="#" title="Close Window" class="modal-close-profile"><img src="../img/close.png" alt="Close Window" /></a>
+    
+    <div id="modaldata" class="modaldesc">
+    
+    </div>
+    </div>
+</div>
 </body>
 
 <footer>

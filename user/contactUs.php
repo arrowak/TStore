@@ -1,12 +1,20 @@
-<div id="contactsuccessmessage" class="alert" style = "display:none;"> </div>
+<div id="contactsuccessmessage" style = "display:none;"> </div>
 <div id="contactLabel">
 <p> <b>Address :</b><br>
 #167, 2<sup>nd</sup> Floor, 16<sup>th</sup> cross,<br> 5<sup>th</sup> phase, JP Nagar, Bangalore - 78
 </p><br>
 <p> <b> Phone :</b> <br>
-Sameer Mutalikdesai - +918861666900 <br>
-Varun Jahagirdar - +919986890329 <br>
-Pramod Kolhapur - +919611710963 
+<table id="foundersphone">
+<tr><td>
+Sameer Mutalikdesai : </td><td>+918861666900</td>
+</tr>
+<tr><td>
+Varun Jahagirdar : </td><td>+919986890329 </td>
+</tr>
+<tr><td>
+Pramod Kolhapur : </td><td> +919611710963 </td>
+</tr>
+</table>
 </p>
 </div> <!-- End Contactlabel div-->
 <div id="contactForm">

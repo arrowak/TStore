@@ -1,5 +1,6 @@
 header{
-width : 800px;
+width : 980px;
+width : 980px;
 height : 250px;
 background : #DEDEDE;
 margin : 0px auto ;
@@ -7,9 +8,14 @@ background-repeat : no-repeat;
 
 } 
 
+#foundersphone td{
+text-align:right;
+font-size:14px;
+}
+
 .slider {
   margin: 0px auto;
-  width: 800px; /* Update to your slider width */
+  width: 980px; /* Update to your slider width */
   height: 250px; /* Update to your slider height */
   position : absolute;
   overflow: hidden; 
@@ -34,7 +40,7 @@ z-index : 1000;
 
 
 .container{
-width : 800px;
+width : 980px;
 background : #DEDEDE;
 margin : 0px auto ;
 padding-bottom: 50px;
@@ -43,12 +49,13 @@ padding-bottom: 50px;
 }
 
 footer{
-width : 800px;
+width : 980px;
 margin : 0px auto;
 }
 
 body{
 background-color: #EEEEEE;	
+font-family : Arial;
 }
 	
 #menuDiv{
@@ -59,9 +66,8 @@ height : 60px;
 
 
 #containerContent{	
-width: 800px;	
+width: 980px;	
 margin-top: 90px;
-margin-left: 20px;
 }
 
 #containerContent li{
@@ -69,8 +75,7 @@ list-style: none;
 }
 
 #containerContent hr{
-margin-left:-20px;
-width: 800px;	
+width: 980px;	
 }
 
 #containerContent .item{
@@ -116,7 +121,7 @@ margin-left:-50px;
 
 #contactsuccessmessage{
 margin-left:-20px;
-width:750px;
+width:920px;
 }
 
 hr{
@@ -291,3 +296,57 @@ text-align: center;
     background-color: rgb(205,44,36);
     color: rgb(240,240,240);
 }
+
+
+
+
+/* Styling for Modal Box */
+
+.modalcontainer {
+	color:#333;
+	//background-color:#ec176c;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+}
+.modal-profile h2 {
+	font-size:2em;
+	letter-spacing:-1px;
+}
+.modal-profile {
+	display:none;
+	width:600px;
+	height:400px;
+	padding:25px;
+	border:1px solid #fff;
+	box-shadow: 0px 2px 7px #292929;
+	-moz-box-shadow: 0px 2px 7px #292929;
+	-webkit-box-shadow: 0px 2px 7px #292929;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	background: #f2f2f2;
+	z-index:8888888;
+}
+
+.modal-lightsout {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:7777777;
+	background:#000;
+}
+
+a.modal-close-profile {
+	position:absolute;
+	top:-15px;
+	right:-15px;
+}
+
+a.modal-social {
+	margin:0 10px 0 0;
+}
+
+/* End Styling Modal Bottom */
