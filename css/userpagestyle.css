@@ -56,7 +56,7 @@ margin : 0px auto;
 
 body{
 background-color: #EEEEEE;	
-font-family : Arial;
+font-family: "Comic Sans MS", cursive, sans-serif;
 }
 	
 #menuDiv{
@@ -122,8 +122,7 @@ margin-left:-50px;
 }
 
 #contactsuccessmessage{
-margin-left:-20px;
-width:920px;
+width:929px;
 }
 
 hr{
@@ -132,6 +131,13 @@ background-color:#AFAFAF;
 height:3px;
 }
 
+#aboutuscontent{
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#faqcontent{
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
 /* css for menubar */
 #menuContainer{
 float: right;
@@ -152,7 +158,7 @@ margin-left: -25px;
 	}
 
 a{
-	
+	color:#000;
 }
 
 li p{
@@ -161,12 +167,32 @@ li p{
 	text-decoration:none;
 }
 	.subtext{
-		padding-top:15px;
+		padding-top:20px;
 		color : #FFF;
 	}
 	
 #catmenulabel{
 margin-left:-15px;
+}
+
+
+#aboutusleft{
+float:left;
+width:350px;
+border-right:solid;
+margin-left:20px;
+}
+
+#aboutusright{
+float:left;
+width:580px;
+margin-left:20px;
+text-align:center;
+}
+
+#item1price{
+color:red;
+font-weight:bold;
 }
 
 /*Menu Color Classes*/
@@ -297,4 +323,19 @@ text-align: center;
 #cssmenu ul ul a:hover{
     background-color: rgb(205,44,36);
     color: rgb(240,240,240);
+}
+
+
+/* modal css */
+
+#modalleftdiv{
+float:left;
+width:180px;
+border-right:solid;
+}
+
+#modalrightdiv{
+float:left;
+margin-left:50px;
+width:250px;
 }

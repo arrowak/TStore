@@ -5,7 +5,7 @@
 	<link rel = "stylesheet" type = "text/css" href = "../css/userpagestyle.css">
 	
 	<script src="../js/jquery.js"></script>
-	
+	<script src="../js/bootstrap.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){  
 			getItems();	
@@ -19,21 +19,40 @@
 				getContactForm();
 			});
 			
-			$("ul.item").click(function(){
-				
-			});
-			
 			$("#kidswear").click(function(){
-				$.ajax({
+				getItems();
+				/* $.ajax({
 					type: "POST",
 					url: "kidswear.php",
 					datatype: "html",
 					success: function(data) {
 						$("#containerContent").html(data);
 					}   
-				});
+				}); */
 			});
 			
+			$("#aboutus").click(function(){				
+				$.ajax({
+					type: "POST",
+					url: "aboutus.php",
+					datatype: "html",
+					success: function(data) {
+						$("#containerContent").html(data);
+					}   
+				}); 
+			});
+			
+			
+			$("#faq").click(function(){				
+				$.ajax({
+					type: "POST",
+					url: "faq.php",
+					datatype: "html",
+					success: function(data) {
+						$("#containerContent").html(data);
+					}   
+				}); 
+			});
 			
 			
 		});
@@ -193,20 +212,25 @@
 		
 	</div> <!-- End div container -->
 	
-	
+<!-- Modal div for dynamic loading of its content-->	
 <div id="modalcontainer" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Modal header</h3>
+    <h4 id="myModalLabel"></h4>
   </div>
   <div class="modal-body">
-    <p>One fine body…</p>
+	<div id="modalleftdiv">
+		
+	</div>
+	<div id="modalrightdiv">
+		
+	</div>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Save changes</button>
+    
   </div>
-</div>
+</div>   <!-- end modal div -->
+
 </body>
 
 <footer>
