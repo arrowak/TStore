@@ -5,8 +5,8 @@ $(".item").click(function(){
 		var price = $(this).attr('data-price');
 		var desc = $(this).attr('data-description');
 		var img = $(this).attr('data-image');
+		$('#modalcontainer').modal('show');
 		
-		$("#modaldata").html("<h2>"+name+"</h2> <br><div style=\"float:left;width:200px;text-align:center;\"> <image src=\""+img+"\" class=\"thumbnail\"><b><span style=\"color:red;margin-left:-50px;\">"+price+"</span></b></div><b> Description : </b> <br><p style=\"float:right;position:absolute;margin-left:210px;\">"+desc+"</p>");
 	});
 });
 </script>

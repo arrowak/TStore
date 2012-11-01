@@ -5,8 +5,7 @@
 	<link rel = "stylesheet" type = "text/css" href = "../css/userpagestyle.css">
 	
 	<script src="../js/jquery.js"></script>
-	<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
-
+	
 	<script type="text/javascript">
 		$(document).ready(function(){  
 			getItems();	
@@ -195,16 +194,18 @@
 	</div> <!-- End div container -->
 	
 	
-<div class="modalcontainer">
-<div class="modal-lightsout"></div>
-<div class="modal-profile">
-    
-    <a href="#" title="Close Window" class="modal-close-profile"><img src="../img/close.png" alt="Close Window" /></a>
-    
-    <div id="modaldata" class="modaldesc">
-    
-    </div>
-    </div>
+<div id="modalcontainer" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
 </div>
 </body>
 
