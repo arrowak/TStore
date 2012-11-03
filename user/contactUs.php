@@ -6,13 +6,13 @@
 <p> <b> Phone :</b> <br>
 <table id="foundersphone">
 <tr><td>
-Sameer Mutalikdesai : </td><td>+918861666900</td>
+Sameer : </td><td>+918861666900</td>
 </tr>
 <tr><td>
-Varun Jahagirdar : </td><td>+919986890329 </td>
+Varun : </td><td>+919986890329 </td>
 </tr>
 <tr><td>
-Pramod Kolhapur : </td><td> +919611710963 </td>
+Pramod : </td><td>+919611710963 </td>
 </tr>
 </table>
 </p>

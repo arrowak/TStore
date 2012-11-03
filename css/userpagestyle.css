@@ -179,6 +179,7 @@ margin-left:-15px;
 #aboutusleft{
 float:left;
 width:350px;
+height:315px;
 border-right:solid;
 margin-left:20px;
 }
@@ -187,7 +188,7 @@ margin-left:20px;
 float:left;
 width:580px;
 margin-left:20px;
-text-align:center;
+font-size:16px;
 }
 
 #item1price{

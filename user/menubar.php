@@ -36,10 +36,7 @@
 			<p>Contact Us</p>
 			<p class="subtext">Get in touch</p>
 		</li></a>
-		<a href="#"><li class="blue menuLi" id="testimonials">
-			<p>Testimonials</p>
-			<p class="subtext">What crowd says!</p>
-		</li></a>
+		
 		</b>
 	</ul>
 	</div> <!-- end div menuContainer -->

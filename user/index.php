@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> tStore </title>
+	<title> tshirtbeku.com </title>
 	<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.css">
 	<link rel = "stylesheet" type = "text/css" href = "../css/userpagestyle.css">
 	
@@ -20,15 +20,15 @@
 			});
 			
 			$("#kidswear").click(function(){
-				getItems();
-				/* $.ajax({
+				
+				$.ajax({
 					type: "POST",
 					url: "kidswear.php",
 					datatype: "html",
 					success: function(data) {
 						$("#containerContent").html(data);
 					}   
-				}); */
+				}); 
 			});
 			
 			$("#aboutus").click(function(){				
@@ -42,6 +42,8 @@
 				}); 
 			});
 			
+	
+
 			
 			$("#faq").click(function(){				
 				$.ajax({
@@ -100,8 +102,7 @@
 		$("#containerContent").html(data);
 	}   
 	});
-		}
-		
+		}		
 		
 		function getContactForm(){
 			$.ajax({
@@ -114,7 +115,6 @@
 	}   
 	});
 		}
-		
 		
 		function getAboutForm(){
 		
@@ -164,37 +164,12 @@
 </head>
 
 <header>
-	<div id="bannerimg">
-		<img src="../img/tbekuBanner.png"/>
-	</div> <!-- End div bannerimg -->
+	
 	<ul class="slider">	
 		<li>
-		<img src="../img/category-polo0.jpg" />
+		<img src="../img/comapny_name.png" />
 		</li>
-		<li>
-		<img src="../img/category-tshirt0.jpg" />
-		</li>
-		<li>
-		<img src="../img/category-wb0.jpg" />		
-		</li>
-		<li>
-		<img src="../img/header-irish.jpg" />		
-		</li>
-		<li>
-		<img src="../img/page-three-news_01.jpg" />		
-		</li>
-		<li>
-		<img src="../img/rBEDik_IL-gIAAAAAAHvE-9wJAUAAATlQPtgRwAAe8r005.jpg" />		
-		</li>
-		<li>
-		<img src="../img/shop2tshirt3fixed2.jpg" />		
-		</li>
-		<li>
-		<img src="../img/slide-1.jpg" />		
-		</li>
-		<li>
-		<img src="../img/tshirt-printing-page1.jpg" />		
-		</li>
+		
 	</ul>
 </header>
 <body>	
@@ -235,6 +210,7 @@
 
 <footer>
 <hr>
-Copyright 2012
+<em>
+&copy;</em> Copyright 2012
 </footer>
 </html>

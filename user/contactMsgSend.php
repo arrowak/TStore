@@ -16,7 +16,7 @@ $header = 'From: sender@gmail.com' . "\r\n" .
             'MIME-Version: 1.0' . "\r\n" .
             'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
-$to = "<pramodgkolhapur@gmail.com>,<arunko350@gmail.com>";
+$to = "<pramodgkolhapur@gmail.com>,<arunko350@gmail.com>,<varun.jahagirdar@gmail.com>,<mdesai.sameer@gmail.com>";
 $sendmail = mail($to,$subject,$msg,$header);
 if($sendmail){
 echo 'Mail sent. We will get back to you as soon as possible.';

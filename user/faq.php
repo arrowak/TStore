@@ -28,7 +28,7 @@
 				<td><b>4. Does Tshirtbeku take bulk orders for T-shirts?</b> </td>
 			</tr>
 			<tr>
-				<td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes. Tshirtbeku do take bulk orders for T-shirts. Please <a href="" style="text-decoration:underline;color:green" id="faqcontactus">contact us</a> for more information.</td>
+				<td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes. Tshirtbeku do take bulk orders for T-shirts. Please <a href="#" style="text-decoration:underline;color:green" id="faqcontactus"> contact us </a> for more information.</td>
 			</tr>
 			
 			<tr>
@@ -40,17 +40,3 @@
 		</tbody>
 	</table>
 </div>
-
-<script>
-$("#faqcontactus").click(function(){	
-			$.ajax({
-  type: "POST",
-  url: "contactUs.php",
-  datatype: "html",
-  success: function(data) {
-		$("#containerContent").empty();
-		$("#containerContent").html(data);
-	}   
-	});
-		});
-</script>
