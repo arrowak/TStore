@@ -136,7 +136,7 @@ font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #faqcontent{
-font-family: "Comic Sans MS", cursive, sans-serif;
+
 }
 /* css for menubar */
 #menuContainer{
@@ -329,14 +329,20 @@ text-align: center;
 
 /* modal css */
 
-#modalleftdiv{
-float:left;
-width:180px;
-border-right:solid;
+.modal-body{
+height: 600px;
 }
 
-#modalrightdiv{
-float:left;
-margin-left:50px;
-width:250px;
+.modal-img{
+height:450px;
 }
+
+#modalcontainer{
+height:600px;
+}
+
+#modalleftdiv{
+float:left;
+width:500px;
+}
+

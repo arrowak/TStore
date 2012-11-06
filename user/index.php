@@ -3,7 +3,7 @@
 	<title> tshirtbeku.com </title>
 	<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.css">
 	<link rel = "stylesheet" type = "text/css" href = "../css/userpagestyle.css">
-	
+	<link rel="shorcut icon" href="../img/chintuFav.png">
 	<script src="../js/jquery.js"></script>
 	<script src="../js/bootstrap.js"></script>
 	<script type="text/javascript">
@@ -170,10 +170,14 @@
 		<img src="../img/comapny_name.png" />
 		</li>
 		
+		<li>
+		<img src="../img/bannerimg.jpg" />
+		</li>
+		
 	</ul>
 </header>
 <body>	
-	
+	<?php include_once("analyticstracking.php") ?>
 	<div class="container">
 <div id="menuDiv">
 <?php 
@@ -197,12 +201,10 @@
 	<div id="modalleftdiv">
 		
 	</div>
-	<div id="modalrightdiv">
-		
-	</div>
+	
   </div>
   <div class="modal-footer">
-    
+  
   </div>
 </div>   <!-- end modal div -->
 
