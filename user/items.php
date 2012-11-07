@@ -19,7 +19,7 @@ $(document).ready(function(){
 		var img = $(this).attr('data-image');
 		$("#myModalLabel").html(name);
 		$("#modalleftdiv").html("<img class='modal-img' src='"+img+"' class='thumbnail'><br><br>");
-		$(".modal-footer").html("<b><span id='modal-price' style='color:red;float:left;'>Price : "+price+"</span></b><br><p id='modal-desc' style='margin-top:-20px;'><b> Description : </b></p> <p> "+desc+"</p>");
+		$(".modal-footer").html("<b><span id='modal-price' style='color:red;float:left;'>Price : "+price+"</span></b><br><span id='modal-desc' style='float:left;margin-top:0px;'><b> Description : </b> "+desc+"</span>");
 	});
 });
 </script>
@@ -47,14 +47,6 @@ $(document).ready(function(){
 		<li id="item1price">Rs.249/-</li>
 	</ul>
 	</a>	
-	
-	<a data-toggle="modal" class="modaldetails" title='View Details' href="#modalcontainer" data-name="Chintu with Fruits" data-price="Rs.249/-" data-description="This is a classic half sleeve round-neck Tshirt for kids with the image of our education mascot 'Chintu' along with various fruits" data-image="../img/fruits.jpg">
-	<ul id="item2" class="item" >
-		<li id="item1img"><img src="../img/fruits~1.jpg" class="thumbnail"></li>
-		<li id="item1name">Chintu with Fruits</li>
-		<li id="item1price">Rs.249/-</li>
-	</ul>
-	</a>
 	
 	<a data-toggle="modal" class="modaldetails" title='View Details' href="#modalcontainer" data-name="Chintu with Fruits" data-price="Rs.249/-" data-description="This is a classic half sleeve round-neck Tshirt for kids with the image of our education mascot 'Chintu' along with various fruits" data-image="../img/fruits2.jpg">
 	<ul id="item2" class="item" >

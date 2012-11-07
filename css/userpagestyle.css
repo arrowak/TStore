@@ -159,6 +159,7 @@ margin-left: -25px;
 
 a{
 	color:#000;
+	text-decoration: none;
 }
 
 li p{
@@ -330,19 +331,16 @@ text-align: center;
 /* modal css */
 
 .modal-body{
-height: 600px;
+height: 490px;
+overflow:hidden;
 }
 
 .modal-img{
-height:450px;
+height:400px;
 }
 
-#modalcontainer{
-height:600px;
-}
 
 #modalleftdiv{
 float:left;
-width:500px;
 }
 
